@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade - Adivinhe o Número</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="arcade">
+        <h1>PIXEL ARCADE</h1>
+        <p class="subtitulo">JOGO DE ADIVINHAÇÃO</p>
+
+        <div class="tela">
+            <p class="instrucao">
+                Pensei em um número de 1 a 10!
+            </p>
+
+            <div class="numero">?</div>
+
+            <label for="palpite">DIGITE SEU PALPITE:</label>
+            <input
+                type="number"
+                id="palpite"
+                min="1"
+                max="10"
+                placeholder="1 - 10"
+            >
+
+            <button id="botaoAdivinhar">JOGAR!</button>
+
+            <p id="mensagem" aria-live="polite">
+                PRONTO PARA JOGAR?
+            </p>
+
+            <p class="tentativas">
+                TENTATIVAS: <span id="contador">0</span>
+            </p>
+
+            <button id="botaoReiniciar" class="reiniciar">
+                NOVA PARTIDA
+            </button>
+        </div>
+
+        <p class="rodape">INSERT COIN • BOA SORTE!</p>
+    </main>
+
+</body>
+</html>

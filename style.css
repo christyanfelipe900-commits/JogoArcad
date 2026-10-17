@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #10051f;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.arcade {
+    width: 100%;
+    max-width: 520px;
+    padding: 25px;
+    text-align: center;
+    background: #1b1030;
+    border: 4px solid #ff35d3;
+    border-radius: 18px;
+    box-shadow: 0 0 15px #ff35d388,
+                0 0 35px #00f5ff33;
+}
+
+h1 {
+    color: #00f5ff;
+    font-family: 'Press Start 2P', monospace;
+    font-size: clamp(18px, 5vw, 27px);
+    line-height: 1.6;
+    text-shadow: 3px 3px #ff35d3;
+}
+
+.subtitulo {
+    color: #ffe600;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.tela {
+    margin-top: 25px;
+    padding: 22px 15px;
+    border: 2px dashed #00f5ff;
+    border-radius: 10px;
+    background: #0b0715;
+}
+
+.instrucao {
+    line-height: 1.7;
+}
+
+.numero {
+    margin: 22px auto;
+    color: #ffe600;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 55px;
+    text-shadow: 0 0 15px #ffe60088;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    color: #00f5ff;
+    font-size: 12px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ff35d3;
+    border-radius: 8px;
+    background: #211332;
+    color: white;
+    font: bold 20px 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 16px 10px;
+    border: none;
+    border-radius: 8px;
+    background: #ff35d3;
+    color: #16051e;
+    font: bold 15px 'Press Start 2P', monospace;
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+button:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px #ff35d399;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#mensagem {
+    min-height: 45px;
+    margin-top: 22px;
+    color: #00f5ff;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.tentativas {
+    color: #ffe600;
+    font-size: 13px;
+}
+
+button.reiniciar {
+    border: 2px solid #00f5ff;
+    background: transparent;
+    color: #00f5ff;
+    font-size: 11px;
+}
+
+.rodape {
+    margin-top: 22px;
+    color: #ff8be8;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 400px) {
+    .arcade {
+        padding: 15px;
+    }
+
+    .tela {
+        padding: 18px 10px;
+    }
+}
